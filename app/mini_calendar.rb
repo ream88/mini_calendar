@@ -23,7 +23,7 @@ __END__
 <header>
   <h1>Mini Calendar</h1>
   
-  <p>A mini calendar completely designed using CSS3 and minimal HTML.</p>
+  <p>A mini calendar designed using CSS3 and minimal HTML.</p>
 </header>
 
 <!-- Calendar -->
