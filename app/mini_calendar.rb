@@ -108,7 +108,7 @@ __END__
 
 <footer>
   <p>2011-2012 created by <a href="http://mariouher.com">Mario Uher</a>, released under the <a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>.</p>
-  <p>Forrst posts: <a href="http://forrst.com/posts/Mini_Calendar_HTML-PEk">Mini Calendar HTML</a>, <a href="">Mini Calendar HTML (updated)</a>, and <a href="#">Mini Calendar Website</a>.</p>
+  <p>Forrst posts: <a href="http://forrst.com/posts/Mini_Calendar_HTML-PEk">Mini Calendar HTML</a>, <a href="">Mini Calendar HTML (updated)</a>, and <a href="http://forrst.com/posts/Mini_Calendar_Website-6g7">Mini Calendar Website</a>.</p>
 
 </footer>
 
