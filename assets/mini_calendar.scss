@@ -1,95 +1,65 @@
 @import 'bourbon/_bourbon.scss';
 
-body {
-  background-image: url('/assets/groovepaper.png');
-  background-color: #f4f4f4;
-  margin: 0 auto;
-  width: 960px;
-  font-family: 'Helvetica Neue';
-}
-
-header {
-  text-align: center;
-
-  h1 {
-    color: #444444;
-    font-size: 4em;
-    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
-    margin: 1em 0 0.5em 0;
-  }
-  
-  p {
-    color: #444444;
-    font-size: 1.5em;
-  }
-}
-
-a {
-  text-decoration: none;
-}
-
 table {
-  @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
-  
   border-spacing: 0;
+  @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
+  font-family: 'Helvetica Neue';
   margin: 3em auto;
   position: relative;
   width: 239px;
-  
-  &:before{
-    @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
-    @include position(absolute, 0px 0 0 2px);
-    
+
+  &:before {
     background: #ffffff;
+    @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
     content: " ";
     display: block;
     height: 230px;
+    @include position(absolute, 0px 0 0 2px);
     width: 236px;
     z-index: -1;
   }
-  
+
   &:after {
-    @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
-    @include position(absolute, 2px 0 0 4px);
-    
     background: #ffffff;
+    @include box-shadow(0 2px 3px 0 rgba(0, 0, 0, 0.3));
     content: " ";
     display: block;
     height: 230px;
+    @include position(absolute, 2px 0 0 4px);
     width: 232px;
     z-index: -2;
   }
-  
+
   thead {
     th {
-      @include border-radius(1px);
-      @include box-shadow(inset 0 1px 0 0 #e88486);
-      @include linear-gradient(#e56568, #bd3f41);
-      
       border-bottom: 1px solid #ac2826;
+      @include border-radius(1px);
       border-top: 1px solid #ac2826;
+      @include box-shadow(inset 0 1px 0 0 #e88486);
       color: white;
       font-size: 13pt;
       font-weight: bold;
+      @include linear-gradient(#e56568, #bd3f41);
       padding: 8px 0;
       text-align: center;
       text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.2);
-      
+
       &.arrow {
         &:first-child {
           border-left: 1px solid #ac2826;
           text-align: right;
         }
-        
+
         &:last-child {
           border-right: 1px solid #ac2826;
           text-align: left;
         }
-        
+
         a {
           color: white;
           font-family: 'MS Gothic';
-          
+          text-decoration: none;
+
           &:hover {
             color: #333333;
           }
@@ -97,31 +67,30 @@ table {
       }
     }
   }
-  
+
   tbody {
     th {
-      @include box-shadow(inset 0 1px 0 0 #ffffff);
-      @include linear-gradient(#f5f5f5, #e8e8e8);
-      
       border-bottom: 1px solid #d4d4d4;
+      @include box-shadow(inset 0 1px 0 0 #ffffff);
       color: #666666;
       font-size: 7.5pt;
       font-weight: normal;
+      @include linear-gradient(#f5f5f5, #e8e8e8);
       padding: 4px 0;
       text-align: center;
       text-shadow: 0 1px 0 #ffffff;
       text-transform: uppercase;
       width: 34px;
-      
+
       &:first-child {
         border-left: 1px solid #abb6bf;
       }
-      
+
       &:last-child {
         border-right: 1px solid #abb6bf;
       }
     }
-    
+
     td {
       background-color: #fcfdfd;
       border-bottom: 1px solid #e2e2e2;
@@ -133,81 +102,55 @@ table {
       padding: 0;
       text-align: center;
       width: 34px;
-      
+
       &.today {
-        @include linear-gradient(#f5f5f5, #e8e8e8);
-        
         border-left: 1px solid #c4c4c2;
         border-bottom: 1px solid #c4c4c2;
+        @include linear-gradient(#f5f5f5, #e8e8e8);
       }
-      
+
       &.last-week {
         border-bottom: 1px solid #c4c4c2;
       }
-      
+
       &.tomorrow {
         border-left: 1px solid #c4c4c2;
       }
-      
+
       &.off {
         color: #d8dbde;
       }
-      
+
       &:last-child {
         border-right: 1px solid #abb6bf;
       }
-      
+
       &:first-child {
         border-left: 1px solid #abb6bf;
       }
-      
+
       &:not(:last-child) {
         @include box-shadow(inset -1px 0 0 0 #eeefef);
-        
+
         &.today {
           @include box-shadow(inset -1px 0 0 0 #d8d8d7);
         }
       }
-      
+
       &.event {
         position: relative;
-        
+
         &:after {
+          border: 1px solid #ac2826;
           @include border-radius(5px);
           @include box-shadow(inset 0 1px 0 0 #e88486);
-          @include linear-gradient(#e56568, #bd3f41);
-          @include position(absolute, 0 2px 2px 0);
-          
-          border: 1px solid #ac2826;
           content: " ";
           display: block;
           height: 4px;
+          @include linear-gradient(#e56568, #bd3f41);
+          @include position(absolute, 0 2px 2px 0);
           width: 4px;
         }
-      }
-    }
-  }
-}
-
-footer {
-    background-image: url('/assets/groovepaper.png');
-  background-color: #f4f4f4;
-
-  @include position(absolute, 0 0 0em 0);
-  
-  border-top: 1px solid #e2e2e2;
-  width: 960px;
-  font-size: 0.8em;
-  text-align: center;
-  
-  p {
-    color: #c4c4c2;
-    
-    a {
-      color: #e56568;
-      
-      &:hover {
-        text-shadow: 0 0px 3px rgba(229, 101, 104, 0.5);
       }
     }
   }
