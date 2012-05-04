@@ -1,4 +1,4 @@
-![Screenshot](http://cloud.mariouher.com/3v351l0v1F0X3L051k3q/mini_calendar.png)
+![Screenshot](http://cloud.mariouher.com/2q0M0l1V1g2f182H3R2Z/mini_calendar.png)
 
 ## Requirements
 
